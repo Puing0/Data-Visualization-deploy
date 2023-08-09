@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title> USTHB MAP</title>
+		<link rel="stylesheet" href="style.css">
+		<script type="text/javascript" src="d3.v3.js"></script>
+		<script type="text/javascript" src="d3.v4.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.5.17/vue.js"></script>
+		<script src="https://d3js.org/d3-array.v2.min.js"></script>
+	</head>
+	<body style="overflow: hidden;">
+
+		<div class="container">
+			<div class="firstFeature">
+				<label for="Feature">Dicipline Info: </label>
+				<div class="sel sel--black-panther">
+					<select onchange="" name="" id="SpecID">
+						<option value="0" disabled>Select Speciality</option>
+					</select>
+				</div class="sel sel--superman">
+				<div>
+					
+					<select id="day" onchange="">
+						<option value="0" disabled>Select Day</option>
+					</select>
+				</div>
+				<div>
+					<select id="Hour" onchange="">
+						<option value="0" disabled>Select Hour</option>
+					</select>
+					<button id="submit" onclick="captUserValues(this)">Submit choices</button>
+				</div>
+			</div>
+			
+
+			<div class="secFeature">
+				<label for="Feature">Teachers Info: </label>
+				<div class="sel sel--black-panther">
+					<select onchange="" name="" id="IDProf">
+						<option value="0" disabled>Select Professor</option>
+					</select>
+				</div class="sel sel--superman">
+				<div>
+					
+					<select id="day2" onchange="">
+						<option value="0" disabled>Select Day</option>
+					</select>
+				</div>
+				<div>
+					<select id="Hour2" onchange="">
+						<option value="0" disabled>Select Hour</option>
+					</select>
+					<button id="submit2" onclick="captUserValuesProf(this)">Submit choices</button>
+				</div>
+			</div>
+
+
+		</div>
+
+		
+		
+
+		  <div id="app" class="details">
+
+			<!-- <h2 v-if="province" class="province-title">{{province.name}}</h2> -->
+			<div class="province-info" id="Division">
+				<ul id="liste">
+				</ul>
+			</div>
+			<svg></svg>
+		  </div>
+		  <script type="text/javascript" src="traitement.js"></script>
+		  <!-- <script type="text/javascript" src="loadAndProcess.js"></script> -->
+
+	</body>
+</html>
